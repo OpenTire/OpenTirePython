@@ -1,4 +1,5 @@
-# OpenTIRE - The open-source mathematical tire modelling library
+# OpenTIRE
+##The open-source mathematical tire modelling library
 
 The OpenTire project is a non-commercial project that has three primary goals:
 * Provide a library of open-source tire models in an easily accessible and useable format
