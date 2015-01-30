@@ -14,4 +14,4 @@ Existing tire model implementations are generally built on dated programming lan
 ## Development plan
 The first release includes implementations of commonly used tire models along with implementation examples, benchmark studies and the first library of parameterized tire models.
 
-Since the project start in early 2014, the project has received support from both academic and commercial contributors. More contributors are wanted to help define the roadmap for future development.
+Since the project start in late 2014, the project has received support from both academic and commercial contributors. More contributors are wanted to help define the roadmap for future development.
