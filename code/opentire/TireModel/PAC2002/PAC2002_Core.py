@@ -3,12 +3,11 @@ __author__ = 'henningo'
 import math
 import numpy as np
 
+# TODO: Use underscore to make it indicate "private" methods
+ 
 class PAC2002_Core():
 
-    # TODO: Use underscore to make it indicate "private" methods
-
     #Region "Pure Fy"
-
     def calculate_gamma_y(self, p, gamma_star):
 
         # 32
