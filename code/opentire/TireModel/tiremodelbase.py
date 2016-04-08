@@ -1,11 +1,10 @@
 __author__ = 'henningo'
 import abc
-import math
 
 class TireModelBase(object):
     __metaclass__ = abc.ABCMeta
 
-    Parameters = None
+    Coefficients = None
     ModelInfo = None
 
     @abc.abstractmethod
@@ -28,7 +27,7 @@ class TireModelBase(object):
         return
 
     @abc.abstractmethod
-    def solve(self, state):
+    def solve(self, state, mode=0):
         """Calculate steady state force"""
         return
 
