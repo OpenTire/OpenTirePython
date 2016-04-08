@@ -14,18 +14,19 @@ class OpenTire:
         if modelname == 'Harty':
             print 'Harty not implemented'
 
-        elif modelname == 'Simple':
-            tm = SimpleModel()
-            tm.createmodel()
+        elif modelname == 'PAC2002':
+            tm = PAC2002()
 
+        else:
+            return None  # Of we cam
+
+        tm.createmodel()
         return tm
-
 
     def __init__(self):
         self.ModelTypes = \
-            {'Simple': 'Simple Tire Model Implementation',
-             'Harty': 'Harty Tire Model Implementation',
-             'Pacejka96': 'Pacejka 96 Implementation'}
+            {'PAC2002': 'Pacejka 2002',
+             'Fiala': 'Fiala Tire Model Implementation'}
 
     def getmodellist(self):
         return self.ModelTypes
