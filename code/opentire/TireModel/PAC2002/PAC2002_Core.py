@@ -86,8 +86,8 @@ class PAC2002_Core():
 
     def calculate_S_Vy(self, p, state, dfz, gamma_y, zeta4):
 
-        # 41
-        S_Vy = state['FZ'] * ((p['PVY1'] + p['PVY2'] * dfz) * p['LVY'] + (p['PVY3'] + p['PVY4'] * dfz)) * gamma_y * p['LMUY'] * zeta4
+        # 41 - Moved parenthesis to sit "behind" gamma_y
+        S_Vy = state['FZ'] * ((p['PVY1'] + p['PVY2'] * dfz) * p['LVY'] + (p['PVY3'] + p['PVY4'] * dfz) * gamma_y) * p['LMUY'] * zeta4
 
         return S_Vy
 
