@@ -314,7 +314,7 @@ class PAC2002(TireModelBase):
         S_Vx = self.Core.calculate_S_Vx(p, state, dfz, self.ZETA1)
 
         # 18
-        fx_pure = D_x * math.sin((C_x * math.atan(B_x * kappa_x - E_x * (B_x * kappa_x - math.atan(B_x * kappa_x)))) + S_Vx)
+        fx_pure = D_x * math.sin((C_x * math.atan(B_x * kappa_x - E_x * (B_x * kappa_x - math.atan(B_x * kappa_x))))) + S_Vx
 
         return fx_pure
 
