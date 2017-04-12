@@ -14,7 +14,28 @@ If you are unfamiliar with packages and modules in Python, the first thing you'l
 ```python
 setup.py install
 ```
-Once OpenTire is installed, you should check out the examples to help you get started.
+Once OpenTire is installed, you can load up a tire model with these commands:
+
+```python
+from opentire import OpenTire
+from opentire.Core import TireState
+
+openTire = OpenTire()
+myTireModel = openTire.createmodel('PAC2002')
+
+state = TireState()
+state['FZ'] = 1500
+state['IA'] = 0.0
+state['SR'] = 0.0
+state['SA'] = 0.0
+state['FY'] = 0.0
+state['V'] = 10.0
+state['P'] = 260000
+
+myTireModel.solve(state)
+```
+
+For more comprehensive examples, please check out the additional examples in the examples folder.
 
 ## Examples
 To help you get started using OpenTire, there are a number of different Jupyter Notebooks which demonstrates how to initiate OpenTire and how to integrate into a tire or vehicle simulation.
