@@ -301,7 +301,7 @@ class PAC2002_Core():
     def calculate_B_r(self, p, B_y, C_y, zeta6):
 
         # 55
-        B_r = (p['QBZ9'] * p['LKY'] / p['LMUY'] * p['QBZ10'] * B_y * C_y) * zeta6
+        B_r = (p['QBZ9'] * p['LKY'] / p['LMUY'] + p['QBZ10'] * B_y * C_y) * zeta6
 
         return B_r
 
