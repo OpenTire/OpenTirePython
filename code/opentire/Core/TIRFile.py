@@ -1,6 +1,6 @@
-__author__ = 'henningo'
-
 from __future__ import print_function
+
+__author__ = 'henningo'
 
 from opentire import OpenTire
 import os
