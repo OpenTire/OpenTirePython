@@ -1,4 +1,4 @@
 __author__ = 'henningo'
 
-from tirestate import TireState
-from TIRFile import TIRFile
+from opentire.Core.tirestate import TireState
+from opentire.Core.TIRFile import TIRFile
