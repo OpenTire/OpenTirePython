@@ -1,3 +1,3 @@
 __author__ = 'henningo'
 
-from opentire import OpenTire
+from opentire.opentire import OpenTire
