@@ -1,5 +1,5 @@
 __author__ = 'henningo'
 
-from PAC2002 import PAC2002
-from tiremodelbase import TireModelBase
-from solvermode import SolverMode
+from opentire.TireModel.PAC2002 import PAC2002
+from opentire.TireModel.tiremodelbase import TireModelBase
+from opentire.TireModel.solvermode import SolverMode
