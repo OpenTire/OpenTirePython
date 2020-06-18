@@ -21,7 +21,7 @@ class PAC2002_Core():
         # 39
         # We need to avoid division by zero
         if C_y * D_y == 0.0:
-            print 'Division by zero detected in B_Y calculation'
+            #print 'Division by zero detected in B_Y calculation'
             B_y = K_y / 0.000000001
         else:
             B_y = K_y / (C_y * D_y)  # This could cause a divide by zero issue
@@ -60,7 +60,7 @@ class PAC2002_Core():
         # 37
         denom = (p['PKY2'] * p['FNOMIN'] * p['LFZ0'])
         if denom == 0.0:
-            print 'Division by zero detected in K_Y calculation'
+            #print 'Division by zero detected in K_Y calculation'
             denom = 0.000000001
 
         K_y0 = p['PKY1'] * p['FNOMIN'] * math.sin(2.0 * math.atan(state['FZ'] / denom)) * p['LFZ0'] * p['LKY']
