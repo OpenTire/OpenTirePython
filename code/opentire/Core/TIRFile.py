@@ -38,9 +38,9 @@ class TIRFile():
         # Create the model based on type in TIR file
         opentire = OpenTire()
         self.Coefficients['PROPERTY_FILE_FORMAT'] = self.Coefficients['PROPERTY_FILE_FORMAT'].replace("'", "")
-        print self.Coefficients['PROPERTY_FILE_FORMAT']
+        print(self.Coefficients['PROPERTY_FILE_FORMAT'])
         tm = opentire.createmodel(self.Coefficients['PROPERTY_FILE_FORMAT'])
-        print tm
+        print(tm)
 
         if tm == None:
             print("Model could not be recognized")
